@@ -65,7 +65,6 @@ const rectangle = {
         return `Rectangle ${this.width}x${this.height}, color: ${this.color}`;
     },
 };
-ẻnweewnrewkn
 
 console.log(rectangle.describe());
 console.log("Diện tích:", rectangle.calculateArea());
