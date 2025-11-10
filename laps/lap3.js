@@ -15,3 +15,5 @@ const createUser = (name = "trung", age = 18, isFinite = false) => {
     };
 };
 console.log(createUser());
+
+

@@ -6,7 +6,7 @@ for (let i = 0; i < 3; i++) {
 }
 //bai2
 const student = {
-    name: "Ngoc Anh",
+    name: "Quốc Trung",
     age: 19,
 };
 student.grade = "A";
@@ -16,10 +16,10 @@ console.log(student);
 //bai3
 const user = {
     firstName: "Nguyễn",
-    lastName: "Ngọc Ánh",
-    product: "Laptop Dell XPS",
+    lastName: "Quốc Trung",
+    product: "Laptop",
     price: 25000000,
-    orderDate: "05-11-2025",
+    orderDate: "09-11-2000",
 };
 const emailTemplate = `
      Xin chào, tôi là ${user.firstName}${user.lastName}!
