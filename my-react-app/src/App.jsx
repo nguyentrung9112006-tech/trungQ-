@@ -1,3 +1,4 @@
+import Header from "./coponents/Header"
 function App() {
   // mock data
   const tours = [
@@ -16,6 +17,7 @@ function App() {
   ]
   return (
     <div>
+      <Header></Header>
       <h1 className="text-3xl text-blue-600 text-center font-bold border-b-2 border-b-orange-400 uppercase">
         Tour Nội Địa
       </h1>
