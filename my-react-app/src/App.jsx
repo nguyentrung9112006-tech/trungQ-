@@ -1,5 +1,8 @@
-import Footer from './coponents/Footer'
-import Header from './coponents/Header'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Heading from './components/Heading'
+import TourCard from './components/TourCard'
+
 
 function App() {
   // mock data
@@ -18,13 +21,13 @@ function App() {
     },
     {
       id: 3,
-      title: 'Tour Du Lịch Nhat Ban Update',
+      title: 'Tour Du Lịch Nhat',
       image:
         'https://vtourist.com.vn/wp-content/uploads/2024/05/kinh-nghiem-du-lich-sydney-1200x800.jpg',
     },
     {
       id: 4,
-      title: 'Tour Du Lịch Nhat Ban Update',
+      title: 'Tour Du Lịch Nhat',
       image:
         'https://vtourist.com.vn/wp-content/uploads/2024/05/kinh-nghiem-du-lich-sydney-1200x800.jpg',
     },
@@ -41,18 +44,13 @@ function App() {
           sẵn sàng tạo ra những trải nghiệm độc đáo và không quên cho du khách,
           giúp mang đến những chuyến hành trình tuyệt vời.
         </p>
+        <Heading title='Tour Nội địa' />
         <div className="flex gap-2">
           {tours.map(tour => (
-            <div key={tour.id}>
-              <img src={tour.image} width={500} alt="" height={300} />
-              <h2 className="text-3xl font-bold text-orange-300">
-                {tour.title}
-              </h2>
-            </div>
+            <TourCard key={tour.id} title={tour.title} image={tour.image} />
           ))}
         </div>
       </main>
-
       <Footer />
     </div>
   )
