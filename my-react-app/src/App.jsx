@@ -3,9 +3,7 @@ import Header from './components/Header'
 import Heading from './components/Heading'
 import TourCard from './components/TourCard'
 
-
 function App() {
-  // mock data
   const tours = [
     {
       id: 1,
@@ -15,42 +13,48 @@ function App() {
     },
     {
       id: 2,
-      title: 'Tour Du Lịch Hoa Ky',
+      title: 'Tour Du Lịch Hoa Kỳ',
       image:
         'https://vtourist.com.vn/wp-content/uploads/2024/04/Tour-Bo-Dong-My-10N9D-destination-new-york-01-1-1200x800.jpg',
     },
     {
       id: 3,
-      title: 'Tour Du Lịch Nhat',
+      title: 'Tour Du Lịch Nhật Bản',
       image:
         'https://vtourist.com.vn/wp-content/uploads/2024/05/kinh-nghiem-du-lich-sydney-1200x800.jpg',
     },
     {
       id: 4,
-      title: 'Tour Du Lịch Nhat',
+      title: 'Tour Du Lịch Úc',
       image:
         'https://vtourist.com.vn/wp-content/uploads/2024/05/kinh-nghiem-du-lich-sydney-1200x800.jpg',
     },
   ]
+
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
-      <main>
-        <h1 className="text-3xl text-blue-600 text-center font-bold border-b-2 border-b-orange-400 uppercase">
+
+      <main className="container mx-auto px-4 py-6 flex-1">
+        <h1 className="text-3xl text-blue-700 text-center font-extrabold border-b-4 border-orange-400 pb-2 uppercase">
           Tour Nội Địa
         </h1>
-        <p className="text-xl font-medium my-2 px-2">
-          Các chuyến đi đồng hành cùng chúng tôi là khoảnh khắc đặc biêt, luôn
-          sẵn sàng tạo ra những trải nghiệm độc đáo và không quên cho du khách,
-          giúp mang đến những chuyến hành trình tuyệt vời.
+
+        <p className="text-lg text-gray-700 leading-relaxed my-4 text-center max-w-3xl mx-auto">
+          Các chuyến đi cùng chúng tôi là những khoảnh khắc đặc biệt, mang đến
+          trải nghiệm độc đáo và khó quên cho du khách. Hãy chuẩn bị cho hành
+          trình tuyệt vời của bạn.
         </p>
-        <Heading title='Tour Nội địa' />
-        <div className="flex gap-2">
-          {tours.map(tour => (
+
+        <Heading title="Danh sách Tour" />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+          {tours.map((tour) => (
             <TourCard key={tour.id} title={tour.title} image={tour.image} />
           ))}
         </div>
       </main>
+
       <Footer />
     </div>
   )

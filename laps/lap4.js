@@ -7,25 +7,25 @@ function getFirstLast(array) {
 const array = [1, 2, 3, 4];
 // console.log(getFirstLast(array));
 // bai 2
-const user = {
-    id: 1,
-    personalInfo: {
-        name: "javascript",
-        contact: {
-            email: "javascript@email.com",
-            phone: "123-456-7890",
-        },
-    },
-};
+function getUserInfo(user) {
+    const {
+        personalInfo: {
+            name,
+            contact: { email }
+        }
+    } = user;
 
-const {
-    personalInfo: { name, email, phone },
-} = contact;
-console.log(email, phone);
-
-function getUserInfo({ name, email, phone = "Unknown" }) {
-    console.log(`name: ${name} email: ${email} sdt: ${phone}`);
+    return { name, email };
 }
 
 console.log(getUserInfo(user));
+
 // { name: 'javascript', email: 'javascript@email.com' }
+// bai 3
+function delay(ms) {
+    return new Promise(resolve => {
+        setTimeout(resolve, ms);
+    });
+}
+
+delay(2000).then(() => console.log("2 seconds passed"));

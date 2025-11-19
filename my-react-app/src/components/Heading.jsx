@@ -1,7 +1,9 @@
 export default function Heading({ title = "Heading" }) {
     return (
-        <button className="text-center px-4 py-2 bg-orange-400 text-white rounded mx-auto block">
-            {title}
-        </button>
-    );
+        <div className="w-fit mx-auto my-6">
+            <h2 className="text-2xl font-bold text-orange-500 border-l-4 border-orange-500 pl-3">
+                {title}
+            </h2>
+        </div>
+    )
 }
