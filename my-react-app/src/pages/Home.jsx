@@ -2,6 +2,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Heading from '../components/Heading'
 import TourCard from '../components/TourCard'
+import FeaturedTours from "../components/FeaturedTours";
 
 function Home() {
     // mock data
@@ -32,6 +33,7 @@ function Home() {
                 {/* <h1 className="text-3xl text-blue-600 text-center font-bold border-b-2 border-b-orange-400 uppercase">
           Tour Nội Địa
         </h1> */}
+                <Banner />
                 <Heading title="Tour Nội Địa" />
                 <p className="text-xl font-medium my-2 px-2">
                     Các chuyến đi đồng hành cùng chúng tôi là khoảnh khắc đặc biêt, luôn
@@ -45,10 +47,10 @@ function Home() {
                 </div>
                 <Heading title="Tour Quoc Te" />
             </main>
-
             <Footer />
         </div>
     )
+
 }
 
 export default Home
