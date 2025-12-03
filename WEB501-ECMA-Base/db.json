@@ -1,0 +1,30 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "Hà Nội - Sapa 3N2D",
+      "destination": "Sapa",
+      "duration": "3 ngày 2 đêm",
+      "price": 2500000,
+      "image": "https://picsum.photos/400/300?random=1",
+      "description": "Khám phá Sapa với những ruộng bậc thang tuyệt đẹp",
+      "available": "10"
+    },
+    {
+      "id": 2,
+      "name": "Hạ Long - Cát Bà 2N1D",
+      "destination": "Hạ Long",
+      "duration": "2 ngày 1 đêm",
+      "price": 1800000,
+      "image": "https://picsum.photos/400/300?random=2",
+      "description": "Du thuyền vịnh Hạ Long - Kỳ quan thiên nhiên thế giới",
+      "available": "30"
+    }
+  ],
+  "users": [
+    {
+      "email": "abc@example.com",
+      "password": "123456"
+    }
+  ]
+}
