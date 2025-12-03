@@ -5,22 +5,22 @@ function Header() {
                 <ul className="flex justify-center gap-10 text-lg font-semibold text-gray-700">
                     <li>
                         <a href="/" className="hover:text-orange-500 transition-colors">
-                            Home
+                            Trang trủ
                         </a>
                     </li>
                     <li>
                         <a href="/" className="hover:text-orange-500 transition-colors">
-                            About
+                            Tour
                         </a>
                     </li>
                     <li>
                         <a href="/" className="hover:text-orange-500 transition-colors">
-                            Booking
+                            Giới Thiệu
                         </a>
                     </li>
                     <li>
                         <a href="/" className="hover:text-orange-500 transition-colors">
-                            Contact
+                            Liên Hệ
                         </a>
                     </li>
                 </ul>
