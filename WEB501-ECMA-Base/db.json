@@ -23,8 +23,9 @@
   ],
   "users": [
     {
-      "email": "abc@example.com",
-      "password": "123456"
+      "email": "azdcm123456@gmail.com",
+      "password": "$2a$10$cl.s3HLVu7ex5DcJKr5NVukjBSeXPwKApEQAK6CgYphqbANB.jrAW",
+      "id": 1
     }
   ]
 }

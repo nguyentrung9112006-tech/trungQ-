@@ -26,26 +26,26 @@ function RegisterPage() {
             <form className="space-y-6" onSubmit={handleSubmit}>
                 {/* Text input */}
                 <div>
-                    <label htmlFor="text" className="block font-medium mb-1">
+                    <label htmlFor="email" className="block font-medium mb-1">
                         Email
                     </label>
                     <input
                         value={email}
                         onChange={event => setEmail(event.target.value)}
                         type="email"
-                        id="text"
+                        id="email"
                         className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                 </div>
                 <div>
-                    <label htmlFor="text" className="block font-medium mb-1">
+                    <label htmlFor="password" className="block font-medium mb-1">
                         password
                     </label>
                     <input
                         value={password}
                         onChange={event => setPassword(event.target.value)}
                         type="password"
-                        id="text"
+                        id="password"
                         className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                 </div>

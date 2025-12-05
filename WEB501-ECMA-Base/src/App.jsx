@@ -17,6 +17,7 @@ function App() {
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
+
             <a href="#" className="hover:text-gray-200">
               Trang chủ
             </a>
